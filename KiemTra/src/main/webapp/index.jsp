@@ -36,26 +36,22 @@
       <div id="featured">
         <h2></h2>
         <p class="headline">Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc.Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. In volutpat sodales ipsum. </p>
-        <div class="featItem" id="i01">
-          <img src="images/img_prod.jpg" width="116" height="125" alt="" />
-          <p><span class="headline2">Morbi volutpat leo in</span><br />
-            <a href="#">Nam eu nulla. Donec</a><br />
-            lobortis purus vel urna. Nunc laoreet lacinia nunc</p>
-        </div>
-        <div class="featItem" id="i02">
-          <img src="images/img_prod-13.jpg" width="116" height="125" alt="" />
-          <p><span class="headline2">Morbi volutpat leo in</span><br />
-            <a href="#">Nam eu nulla. Donec</a><br />
-            lobortis purus vel urna. Nunc laoreet lacinia nunc</p>
-        </div>
-        <div class="featItem" id="i03">
-          <img src="images/img_prod-14.jpg" width="116" height="125" alt="" />
-          <p><span class="headline2">Morbi volutpat leo in</span><br />
-            <a href="#">Nam eu nulla. Donec</a><br />
-            lobortis purus vel urna. Nunc laoreet lacinia nunc</p>
-        </div>
-        <div class="clear"></div>
-      </div>
+        <div class="row text-center mt-4">
+                  <!-- Người B code giao diện Bootstrap nhưng vẫn điền dữ liệu cứng (tĩnh) -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                      <img src="images/img_prod.jpg" class="card-img-top" alt="Product" />
+                      <div class="card-body">
+                        <h5 class="card-title text-primary">Morbi volutpat leo in</h5>
+                        <h6 class="card-subtitle mb-2"><a href="#" class="text-decoration-none">Nam eu nulla. Donec</a></h6>
+                        <p class="card-text text-muted">lobortis purus vel urna. Nunc laoreet lacinia nunc</p>
+                        <button class="btn btn-sm btn-success">Thêm vào giỏ</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- B copy paste HTML ra 2 khối Card y hệt cho sản phẩm 2, 3... -->
+                </div>
+                <div class="clear"></div>
     </div>
 
     <div class="clear" id="end"></div>
