@@ -21,42 +21,27 @@
       <div id="header">
         <img src="images/slogan2.gif" width="192" height="70" alt="" id="slogan2" />
       </div>
-
-      <div id="content">
-
-        <div id="leftPan">
-          <div id="welcome">
-            <h2></h2>
-            <img src="images/img_welcome.jpg" width="172" height="56" alt="" />
-            <p class="headline">Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. </p>
-            <p>Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. In volutpat sodales
-              ipsum. Sed vestibulum. Integer in ante. Sed Nunc laoreet lacinia nunc. In volutpat sodales </p>
-          </div>
-        </div>
-
-        <div id="rightPan">
-          <div id="featured">
-            <h2></h2>
-            <p class="headline">Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc.Nam eu nulla.
-              Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. In volutpat sodales ipsum. </p>
-            <div class="featItem" id="dynamicItems">
-              <!-- Người A dùng vòng lặp JSTL sinh ra thẻ HTML -->
-              <c:forEach var="product" items="${productList}">
-                <div class="featItem">
-                  <img src="${product.imageUrl}" width="116" height="125" alt="${product.name}" />
-                  <p><span class="headline2">${product.title}</span><br />
-                    <a href="detail?id=${product.id}">${product.shortDesc}</a><br />
-                    ${product.price} VNĐ
-                  </p>
+    <div id="rightPan">
+      <div id="featured">
+        <h2></h2>
+        <p class="headline">Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc.Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. In volutpat sodales ipsum. </p>
+        <div class="row text-center mt-4">
+                  <!-- Người B code giao diện Bootstrap nhưng vẫn điền dữ liệu cứng (tĩnh) -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                      <img src="images/img_prod.jpg" class="card-img-top" alt="Product" />
+                      <div class="card-body">
+                        <h5 class="card-title text-primary">Morbi volutpat leo in</h5>
+                        <h6 class="card-subtitle mb-2"><a href="#" class="text-decoration-none">Nam eu nulla. Donec</a></h6>
+                        <p class="card-text text-muted">lobortis purus vel urna. Nunc laoreet lacinia nunc</p>
+                        <button class="btn btn-sm btn-success">Thêm vào giỏ</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- B copy paste HTML ra 2 khối Card y hệt cho sản phẩm 2, 3... -->
                 </div>
-              </c:forEach>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-          <div class="clear" id="end"></div>
-        </div>
-      </div>
+                <div class="clear"></div>
+    </div>
 
       <jsp:include page="includes/footer.jsp" />
 
